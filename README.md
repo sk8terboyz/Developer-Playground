@@ -11,7 +11,7 @@ Libraries:
 - NodeJS (not currently added, but I expect to add it later on)
     
 Projects:
-    - Active Projects
+- Active Projects
         - Popcorn
             - This will be a game where kernals will fly around the screen for the user to click on. Once a kernal is "popped" (clicked on) it will burst into popcorn and add to the player's score.
         - Dice
