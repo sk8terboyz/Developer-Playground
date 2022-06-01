@@ -1,0 +1,180 @@
+/* Universal Styling */
+html body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgb(13, 167, 128);
+}
+
+/* Universal Navbar */
+.navbar-title {
+    color: rgba(192, 190, 188, 0.87);
+}
+
+.navbar-title:hover {
+    color: rgba(148, 235, 145, 0.87);
+}
+
+.offcanvas {
+    background-color: rgb(43, 42, 42);
+}
+
+.offcanvas-title {
+    color:azure;
+    font-size: 200%;
+}
+
+.nav-link {
+    font-size: 175%;
+    margin-top: 3rem;
+}
+
+/* Home */
+.main {
+    background-color: rgb(44, 126, 75);
+}
+
+.leftContainer {
+    /* background-color: rgb(9, 97, 56); */
+    background-image: linear-gradient(to right, rgb(173, 15, 15), rgb(23, 53, 189));
+    margin-right: 5%;
+}
+
+.rightContainer {
+    /* background-color: rgb(9, 97, 56); */
+    background-image: linear-gradient(to left, rgb(173, 15, 15), rgb(23, 53, 189));
+    margin-left: 5%;
+}
+
+.titleContainer {
+    text-align: center;
+}
+
+.titleContainer:hover {
+    cursor: default;
+}
+
+#welcomeMsg {
+    color:white
+}
+
+#homeLine {
+    border: none;
+    opacity: 75%;
+    border-top: 5px dashed black;
+}
+
+/* About */
+
+
+/* Explanations */
+
+
+/* Branches */
+
+.switch-up {
+    border: 2px solid;
+    color: #FFF;
+    background-color: rgb(3, 72, 163);
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 42px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: inset 0 0 0 0 #0a7285;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.slide_in:hover {
+    box-shadow: inset 0 0 0 50px #0a7285;
+}
+
+.slideContainer {
+    width: 100px;
+}
+
+.slider {
+    -webkit-appearance: none; /* Override default CSS styles*/
+    appearance: none;
+    width: 100%; /* full width */
+    height: 25px; /* specified height */
+    background: transparent; /* background color */
+    outline: none; /* remove outline */
+    opacity: 0.7; /* set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px;  /* slider handle width*/
+    height: 25px; /* slider handle height*/
+    background: #04AA6D; /* background color */
+    cursor: pointer; /* cursor on hover */
+}
+
+/* May or may not need this (requires further testing) */
+.slider::-moz-range-thumb {
+    width: 25px;  /* slider handle width*/
+    height: 25px; /* slider handle height*/
+    background: #04AA6D; /* background color */
+    cursor: pointer; /* cursor on hover */
+}
+
+#myRange {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#sliderSpeed {
+    position: absolute;
+    top: 50px;
+    right: 65px;
+    color: white;
+}
+
+/* Popcorn */
+.background {
+    width: 100%;
+    height: 400px;
+    position: fixed;
+    background: blue;
+    top: 30%;
+}
+
+.seed {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(126, 75, 16, 0.884);
+    border-radius: 35%;
+    position: absolute;
+    top: 800px;
+    left: 700px;
+}
+
+/* Dice */
+.diceContainer {
+    border: 4px solid blue;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 0%;
+}
+
+#dice {
+    margin-top: 15%;
+    font-size: 300%;
+}
