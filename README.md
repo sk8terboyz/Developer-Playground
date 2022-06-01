@@ -2,15 +2,15 @@
 
 Author: Shane Kennedy
 
-######The idea:
-    This website is where I want to develop fun/random projects. It will be a fully functioning website, but I am going to try to stay away from server-based projects for awhile. Right now I want to work within the capabilities of HTML, CSS, and JavaScript. JQuery and Bootstrap are libraries I am fairly familiar with so I am using these to help, and I hope to use NodeJS later on.
+#### The idea:
+This website is where I want to develop fun/random projects. It will be a fully functioning website, but I am going to try to stay away from server-based projects for awhile. Right now I want to work within the capabilities of HTML, CSS, and JavaScript. JQuery and Bootstrap are libraries I am fairly familiar with so I am using these to help, and I hope to use NodeJS later on.
     
-####Libraries:
+#### Libraries:
 - JQuery
 - Bootstrap
 - NodeJS (not currently added, but I expect to add it later on)
     
-####Projects:
+#### Projects:
 - Active Projects
     - Popcorn
         - This will be a game where kernals will fly around the screen for the user to click on. Once a kernal is "popped" (clicked on) it will burst into popcorn and add to the player's score.
@@ -21,7 +21,7 @@ Author: Shane Kennedy
         - Currently the branching logic works just fine, but the styling is all messed up because it was originally made to be its own page and not with a navbar or anything, so I need to fix these issues.
 - Finished Projects
     
-####Potential Ideas:
+#### Potential Ideas:
 - Recreations (already finished & on github)
     - Hangman
     - Branches
