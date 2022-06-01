@@ -22,11 +22,12 @@ This website is where I want to develop fun/random projects. It will be a fully 
 - Finished Projects
     
 ### Potential Ideas:
-- Recreations (already finished & on github)
+- Recreations (already finished and/or on github)
     - Hangman
     - Branches
     - Snake 
     - Radar (could turn this into a game as a sonar radar)
+    - Grocery List
 - Project Ideas
     - JQuery game (already started but not finished)
     - Yahtzee
@@ -38,3 +39,5 @@ This website is where I want to develop fun/random projects. It will be a fully 
         - Dedicate a page for just playing around with animation styles with JavaScript or CSS
     - 3D Mapping of environments
         - I've been wanting to get into 3D mapping for awhile now, but that may be something restricted towards non web-based languages. I will look into this later on.
+    - Bouncy Balls/Ball Pit
+        - Bouncy Balls should be doable after I figure out the bouncing kernals in the popcorn game
