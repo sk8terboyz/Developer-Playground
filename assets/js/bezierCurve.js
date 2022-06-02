@@ -60,6 +60,8 @@ $(document).ready(function() {
 
     animate();
     
+    // button event listeners
+
     $("#playBtn").click(function(e) {
         playAnim = true;
     })
@@ -67,5 +69,25 @@ $(document).ready(function() {
     $("#resetBtn").click(function(e) {
         playAnim = false;
         ball = {x:30, y:30, speed:0.01, t:0, radius:20};
+        document.querySelectorAll(".value").forEach(val => {
+            val.textContent = 0;
+        })
+    })
+
+    $(".decremental").click(function(e) {
+        if(e.currentTarget.parentNode.children[1].textContent > 0) {
+            e.currentTarget.parentNode.children[1].textContent -= 1;
+        }
+    })
+
+    $(".incremental").click(function(e) {
+        if(e.currentTarget.parentNode.children[1].textContent < 600) {
+            e.currentTarget.parentNode.children[1].textContent = parseInt(e.currentTarget.parentNode.children[1].textContent) + 1;
+        }
+    })
+    $(".incremental").mousedown(function(e) {
+        if(e.currentTarget.parentNode.children[1].textContent < 600) {
+            e.currentTarget.parentNode.children[1].textContent = parseInt(e.currentTarget.parentNode.children[1].textContent) + 1;
+        }
     })
 })
