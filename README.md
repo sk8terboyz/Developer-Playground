@@ -19,6 +19,8 @@ This website is where I want to develop fun/random projects. It will be a fully 
      - Branches
         - This is a recreation I made following MrDoob's system (https://mrdoob.com/#/111/branching). Whenever the user clicks, a tree structure is created and branches are created continuously until it dies out. I have added a "Switch-Up" button to change the background color of the canvas and an adjustable slider to change the speed of the branches (currently the slider is not working).
         - Currently the branching logic works just fine, but the styling is all messed up because it was originally made to be its own page and not with a navbar or anything, so I need to fix these issues.
+    - Bezier Curve
+        - This project is going to be used to help me complete the popcorn game. The bezier curve is the basic functionality of creating a changeable curve with JS. I am following this tutorial: https://www.youtube.com/watch?v=7adUs4o2_JM made by user Qixotl LFC on YouTube.
 - Finished Projects
     
 ### Potential Ideas:
