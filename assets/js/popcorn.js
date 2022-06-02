@@ -1,6 +1,8 @@
 $(document).ready(function() {
     $(".seed").click(function(e) {
         let rand = Math.floor(Math.random()*500)
+        let qe = 1-Math.sin(Math.acos(0.05));
+        console.log(qe);
         if(rand > 300) { rand = (rand*(-1))+200; }
         const pop = [
             { transform: `translateX(0px) translateY(0px) rotate(0)` },

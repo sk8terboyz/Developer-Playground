@@ -12,7 +12,7 @@
     <body>
         <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand navbar-title" href="index.html">Developer Playground</a>
+              <a class="navbar-brand navbar-title" href="../../index.html">Developer Playground</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -24,10 +24,10 @@
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                      <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="/assets/pages/about.html">About</a>
+                      <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -36,17 +36,18 @@
                       <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
                         <li><h6 class="dropdown-header">Active Projects</h6></li>
                         <li><a class="dropdown-item" href="branches.html">Branches</a></li>
+                        <li><a class="dropdown-item" href="bezierCurve.html">Bezier Curve</a></li>
                         <li><a class="dropdown-item" href="#">TBD</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
                         <li><h6 class="dropdown-header">Developing Projects</h6></li>
-                        <li><a class="dropdown-item" href="assets/pages/dice.html">Dice</a></li>
-                        <li><a class="dropdown-item" href="assets/pages/popcorn.html">Popcorn</a></li>
+                        <li><a class="dropdown-item" href="dice.html">Dice</a></li>
+                        <li><a class="dropdown-item" href="popcorn.html">Popcorn</a></li>
                         <li>
                           <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="/assets/pages/explanations.html">Explanations</a></li>
+                        <li><a class="dropdown-item" href="explanations.html">Explanations</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -60,15 +61,16 @@
         </nav>
         <div class="branches">
             <main>
+              <div id="branchContainer">
                 <div class="button">
                     <button class="slide_in switch-up" type="button">switch-up</button>
                 </div>
                 <div class=slideContainer>
                     <span id="sliderSpeed">Speed: <span id="slider--output">10</span></span>
                     <input type="range" min="1" max="20" value="10" id="myRange">
+                    <p id="disclaimer">Currently doesn't work</p>
                 </div>
-                <div id="branchContainer"></div>
-                <script src="/script.js"></script>
+              </div>
             </main>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

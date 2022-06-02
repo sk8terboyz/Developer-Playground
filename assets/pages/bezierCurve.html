@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popcorn Game</title>
+    <title>About</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark fixed-top">
@@ -26,7 +26,7 @@
                   <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="">About</a>
+                  <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,7 +46,7 @@
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#">Explanations</a></li>
+                    <li><a class="dropdown-item" href="explanations.html">Explanations</a></li>
                   </ul>
                 </li>
               </ul>
@@ -57,11 +57,18 @@
             </div>
           </div>
         </div>
-    </nav>
-    <div class="background"></div>
-    <span class="seed"></span>
+      </nav>
+      <div class="bezierContainer">
+          <h1 id="bezierTitle">Bezier Curve</h1>
+          <canvas id="bezierCanvas" width="600" height="600"></canvas>
+          <div>
+              <button class="btn btn-danger btn-lg" id="playBtn">Play</button>
+              <button class="btn btn-danger btn-lg" id="resetBtn">Reset</button>
+          </div>
+      </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="../js/popcorn.js"></script>
+    <script type="text/javascript" src="../js/bezierCurve.js"></script>
 </body>
 </html>

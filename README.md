@@ -17,7 +17,7 @@ Projects:
         - Dice
             - I want to recreate some classic games with dice, so right now this is just a playground for developing each aspect of the dice.
         - Branches
-            - This is a recreation I made following MrDoob's system (https://mrdoob.com/#/111/branching). Whenever the user clicks, a tree structure is created and branches are created continuously until it dies out. I have added a "Switch-Up" button to change the background color of the canvas and an adjustable slider to change the speed of the branches (currently the slider is not working).
+            - This is a recreation I made following MrDoob's system (https://mrdoob.com/#/111/branching). Whenever the user clicks, a branching point is created and branches are created continuously until it dies out. I have added a "Switch-Up" button to change the background color of the canvas and an adjustable slider to change the speed of the branches (currently the slider is not working).
             - Currently the branching logic works just fine, but the styling is all messed up because it was originally made to be its own page and not with a navbar or anything, so I need to fix these issues.
     - Finished Projects
     
