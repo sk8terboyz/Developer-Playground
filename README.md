@@ -16,12 +16,12 @@ This website is where I want to develop fun/random projects. It will be a fully 
         - This will be a game where kernals will fly around the screen for the user to click on. Once a kernal is "popped" (clicked on) it will burst into popcorn and add to the player's score.
     - Dice
         - I want to recreate some classic games with dice, so right now this is just a playground for developing each aspect of the dice.
-     - Branches
+- Finished Projects
+    - Branches
         - This is a recreation I made following MrDoob's system (https://mrdoob.com/#/111/branching). Whenever the user clicks, a branch structure is created and branches are created continuously until it dies out. I have added a "Switch-Up" button to change the background color of the canvas and an adjustable slider to change the speed of the branches (currently the slider is not working).
-        - Currently the branching logic works just fine, but the styling is all messed up because it was originally made to be its own page and not with a navbar or anything, so I need to fix these issues.
+        - The only part that doesn't work is the slider that attempts to change the speed of the branching. Unfortunately this isn't working yet, but is not required.
     - Bezier Curve
         - This project is going to be used to help me complete the popcorn game. The bezier curve is the basic functionality of creating a changeable curve with JS. I am following this tutorial: https://www.youtube.com/watch?v=7adUs4o2_JM made by user Qixotl LFC on YouTube.
-- Finished Projects
     
 ### Potential Ideas:
 - Recreations (already finished and/or on github)
