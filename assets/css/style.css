@@ -170,6 +170,16 @@ html body {
     right: -30px;
 }
 
+#bTitle {
+    position: absolute;
+    left: 40%;
+    font-size: 4rem;
+    background: -webkit-linear-gradient(right, rgb(134, 134, 134), rgb(0, 0, 0));
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
 /* Popcorn */
 .background {
     width: 100%;
@@ -177,6 +187,25 @@ html body {
     position: fixed;
     background: blue;
     top: 30%;
+}
+
+#pTitle {
+    font-size: 3rem;
+    font-stretch: extra-expanded;
+    cursor: default;
+    background: -webkit-linear-gradient(right, rgb(134, 134, 134), rgb(0, 0, 0));
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+#pTitle:hover {
+    font-size: 3.2rem;
+    font-stretch: ultra-expanded;
+    background: -webkit-linear-gradient(right, rgb(141, 47, 47), rgb(53, 12, 202));
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
 
 .seed {
@@ -187,6 +216,29 @@ html body {
     position: absolute;
     top: 800px;
     left: 700px;
+}
+
+#popcornCanvas {
+    border-radius: 5px;
+    background-color: rgb(209, 209, 209);
+}
+
+.canvasContainer {
+    margin-top: 5%;
+}
+
+.countdownContainer {
+    position: absolute;
+    left: 45%;
+    top: 40%;
+}
+
+#countdown {
+    font-size: 7rem;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Dice */

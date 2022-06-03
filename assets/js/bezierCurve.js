@@ -85,9 +85,4 @@ $(document).ready(function() {
             e.currentTarget.parentNode.children[1].textContent = parseInt(e.currentTarget.parentNode.children[1].textContent) + 1;
         }
     })
-    $(".incremental").mousedown(function(e) {
-        if(e.currentTarget.parentNode.children[1].textContent < 600) {
-            e.currentTarget.parentNode.children[1].textContent = parseInt(e.currentTarget.parentNode.children[1].textContent) + 1;
-        }
-    })
 })
