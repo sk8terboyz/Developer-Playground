@@ -24,8 +24,8 @@ $(document).ready(function() {
     }
     
     function createObject() {
-        let obj = { x:getRandomValue(XMAX), y:canvas.height+25, speed:SPEED, t:0, src:"../images/seed.png", points:[], time:0 };
-        obj.points = [ {x:obj.x, y:obj.y}, {x:getRandomValue(200, 100), y:0}, {x:getRandomValue(200, 100), y:0}, {x:getRandomValue(XMAX, 0, true), y:canvas.height+25} ];
+        let obj = { x:getRandomValue(XMAX+100), y:canvas.height+25, speed:SPEED, t:0, src:"../images/seed.png", points:[], time:0 };
+        obj.points = [ {x:obj.x, y:obj.y}, {x:getRandomValue(800, 100), y:0}, {x:getRandomValue(800, 100), y:0}, {x:getRandomValue(XMAX+100, 0, true), y:canvas.height+25} ];
         const node = document.createElement("img");
         node.setAttribute("src", obj.src);
         node.setAttribute("alt", "Popcorn seed");
@@ -49,9 +49,9 @@ $(document).ready(function() {
     })
 
     function animateSeed(obj) {
-        let startX = getRandomValue(XMAX);
-        let peak = getRandomValue(XMAX);
-        let endX = getRandomValue(XMAX, 0, true, obj);
+        let startX = getRandomValue(XMAX+100);
+        let peak = getRandomValue(XMAX+100);
+        let endX = getRandomValue(XMAX+100, 0, true, obj);
         console.log(startX, peak, endX);
         
         const pop = [
@@ -65,7 +65,7 @@ $(document).ready(function() {
             iterations: 1,
         }
         const nodes = ($(".seedContainer")[0].childNodes);
-        obj.time = Math.floor(Math.random()*GAMETIMER);
+        obj.time = Math.floor(Math.random()*(GAMETIMER-1000));
         console.log(`time (ms): ${obj.time}`);
         nodes.forEach(seed => {
             setTimeout(() => {

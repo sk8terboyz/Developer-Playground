@@ -31,6 +31,10 @@ html body {
     margin-top: 3rem;
 }
 
+.first {
+    margin-top: 5%;
+}
+
 /* Home */
 .main {
     background-color: rgb(44, 126, 75);
@@ -262,6 +266,16 @@ html body {
     -ms-transform: translate(-50%,-50%);
   }
 
+#overlayDisclaimer {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(201, 201, 201);
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+  
 .timerContainer {
     position: absolute;
     left: 10%;
@@ -333,4 +347,12 @@ html body {
 
 .temp {
     margin-top: 10%; 
+}
+
+/* Basics */
+
+.basicTitle {
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: bolder;
 }
