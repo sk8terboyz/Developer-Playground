@@ -8,8 +8,8 @@ $(document).ready(function() {
 
     let points = [
         {x:ball.x, y:ball.y},
-        {x:70, y:200},
-        {x:125, y:295},
+        {x:70, y:20},
+        {x:125, y:95},
         {x:350, y:350}
     ]
 
