@@ -2,25 +2,25 @@
     "Projects": {
         "Working Projects": [
             {
-                "ID": 0,
+                "ID": 1,
                 "Name": "Branches",
                 "Future Updates": "Not Likely",
                 "Description": "This is an older recreation I did of a Mr. Doob project. The branches are created where the user clicks and each branch only lasts a set amount of time."
             },
             {
-                "ID": 1,
+                "ID": 2,
                 "Name": "Bezier Curve",
                 "Future Updates": "Likely",
                 "Description": "The Bezier Curve allows an object to follow a set path based on the positioning of anchor points that adjust the movement style of the object."
             },
             {
-                "ID": 4,
+                "ID": 3,
                 "Name": "Basics",
                 "Future Updates": "Highly Likely",
                 "Description": "This is the page I designated for basic projects to be developed. Such projects may include, but not limited to: Random Number Generator, Calculator, Read/Write Data"
             },
             {
-                "ID": 5,
+                "ID": 4,
                 "Name": "Explanation",
                 "Future Updates": "Highly Likely",
                 "Description": "This page is used to explain each of my projects in a consolidated place. I plan for this data to always be dynamically created/updated making use of fetch requests. Currently it is simply setup to read a JSON file, but focusing on SQL later on may be more beneficial."
@@ -28,16 +28,35 @@
         ],
         "Developing Projects": [
             {
-                "ID": 2,
+                "ID": 1,
                 "Name": "Popcorn",
                 "Description": "This game makes use of the Bezier Curve (at least initially did), and focuses on user reaction speed and time to click on seeds that pop up. When a seed is clicked on, it will turn to popcorn."
             },
             {
-                "ID": 3,
+                "ID": 2,
                 "Name": "Dice",
                 "Description": "This is currently just a simple die that can be 'rolled' as many times as desired and will always give a random value between 1-6"
             }
         ],
-        "Project Ideas":[]
+        "Project Ideas":[
+            {
+                "ID": 1,
+                "Name": "Hangman",
+                "Description": "This is already created and in one of my github repos, but it would need fine tuning in the styling.",
+                "Likelihood": "75%"
+            },
+            {
+                "ID": 2,
+                "Name": "Calculator",
+                "Description": "I plan for this to be a simple calculator that can take in digits, do simple calculations, then display them. I don't plan going as far to make this a graphing calculator or anything near, but simple calculations are easy.",
+                "Likelihood": "90%"
+            },
+            {
+                "ID": 3,
+                "Name": "Ball Pit",
+                "Description": "I'm not entirely sure if it would be a ball pit or a bouncing ball game, but I do know I want to make bouncy balls and they aren't as difficult as I initially thought from what I've seen.",
+                "Likelihood": "50%"
+            }
+        ]
     }
 }

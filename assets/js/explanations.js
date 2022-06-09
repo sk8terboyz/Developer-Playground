@@ -32,6 +32,7 @@ $(document).ready(function() {
             }).catch(error => {
                 console.error(error);
             })
+        $("#displayer")[0].remove();
     })
 
     function storeData(projects=null) {
@@ -58,7 +59,7 @@ $(document).ready(function() {
         }
         if(piLength > 0) {
             for(let i = 0; i < piLength; i++) {
-                projectArray[1].push(projects["Project Ideas"][i]);
+                projectArray[2].push(projects["Project Ideas"][i]);
             }
         }
         return projectArray;
@@ -97,9 +98,13 @@ $(document).ready(function() {
                 $(".dpCardHolder")[0].appendChild(card);
                 break;
             case "pi":
+                const likelihood = document.createElement("li");
+                likelihood.innerHTML = `<strong>Likelihood:</strong> ${project["Likelihood"]}`
                 // set order for data to be displayed (leaves room for updates later)
                 dataHolder.appendChild(name);
                 dataHolder.appendChild(description);
+                dataHolder.appendChild(likelihood);
+
                 card.appendChild(dataHolder);
                $(".piCardHolder")[0].appendChild(card);
                 break;
