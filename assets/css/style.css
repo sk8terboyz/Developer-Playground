@@ -110,6 +110,25 @@ html body {
     margin: 0;
 }
 
+.contentContainer {
+    background-color: rgb(33,37,41);
+    color: white;
+}
+
+#contentHeader {
+    color: #0d6efd;
+}
+
+#contentSubHeader {
+    color: #0993a5; 
+}
+
+.scrollspy {
+    height: 50em;
+    overflow: auto;
+    padding: 1%;
+}
+
 /* Branches */
 
 #canvas {
