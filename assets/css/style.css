@@ -82,6 +82,19 @@ html body {
 
 /* Explanations */
 
+.eTitle {
+    font-size: 3rem;
+    font-family: monospace;
+    font-weight: 600;
+    text-shadow: 2px 2px white;
+}
+
+.eFooter {
+    font-size: 1.5rem;
+    font-family: monospace;
+    font-weight: 600;
+    text-shadow: 2px 2px white;
+}
 
 /* Branches */
 
