@@ -129,6 +129,10 @@ html body {
     padding: 1%;
 }
 
+.project-link {
+    margin-top: 1.5rem;
+}
+
 /* Branches */
 
 #canvas {
@@ -359,8 +363,7 @@ html body {
 /* Bezier Curve */
 
 .bezierContainer {
-    height: 70vh;
-    width: 70vw;
+    /* width: 90vw; */
     /* position: fixed; */
     /* display: flex; */
     /* flex-direction: column; */
@@ -368,9 +371,11 @@ html body {
     align-items: center;
     margin: 0;
     margin-top: 5%;
+    margin-right: 0;
 }
 
 #bezierCanvas {
+    width: 40vw;
     border-radius: 5px;
     background-color: rgb(209, 209, 209);
 }
@@ -401,4 +406,33 @@ html body {
     font-size: 4rem;
     font-family: sans-serif;
     font-weight: bolder;
+}
+
+.rng {
+    background-color: rgb(33,37,41);
+    color: white;
+    height: 100%;
+}
+
+.max, .min {
+    margin-bottom: 5%;
+}
+
+#minInput, #maxInput {
+    width: 80%;
+}
+
+#result {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: monospace;
+}
+
+#lOp {
+    border: 2px solid black;
+}
+
+#lOp:hover {
+    background-color:#410c5f;
+    color: white
 }
