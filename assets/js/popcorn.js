@@ -25,7 +25,7 @@ $(document).ready(function() {
     }
     
     function createObject() {
-        let obj = { x:getRandomValue(XMAX+100), y:canvas.height+25, speed:SPEED, t:0, src:"../images/seed.png", points:[], time:0 };
+        let obj = { x:getRandomValue(XMAX+100), y:canvas.height+25, speed:SPEED, t:0, src:"../images/popcorn/seed.png", points:[], time:0 };
         obj.points = [ {x:obj.x, y:obj.y}, {x:getRandomValue(800, 100), y:0}, {x:getRandomValue(800, 100), y:0}, {x:getRandomValue(XMAX+100, 0, true), y:canvas.height+25} ];
         const node = document.createElement("img");
         node.setAttribute("src", obj.src);
@@ -40,7 +40,8 @@ $(document).ready(function() {
     
     document.body.addEventListener('click', function(e) {
         if(e.target.id == "seedling") {
-            e.target.classList.add('hidden');
+            e.target.src = "../images/popcorn/popcorn.png"
+            // e.target.classList.add('hidden');
             score++;
             $(".score")[0].innerHTML =`Score: ${score}`;
             if(score == FULLCOUNT) {
@@ -72,7 +73,7 @@ $(document).ready(function() {
         nodes.forEach(seed => {
             setTimeout(() => {
                 seed.animate(pop, popTime);
-            }, obj.time);      
+            }, obj.time);
         });
         // $("#seedling")[0].animate(pop, popTime);
         // console.log($(".seedling"));
