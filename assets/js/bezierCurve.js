@@ -1,9 +1,16 @@
 $(document).ready(function() {
     const canvas = document.getElementById("bezierCanvas");
     const ctx = canvas.getContext("2d");
-
+    // get all saved patterns
+    fetch('../data/bcPatterns.json')
+            .then(res => res.json())
+            .then(data => {
+                savedPatterns.push(data["savedPatterns"]);
+                console.log(savedPatterns[0]["default"]);
+            })
+    
     let playAnim = false;
-
+    let savedPatterns = [];
     let ball = {x:30, y:30, speed:0.01, t:0, radius:20};
 
     let points = [
@@ -12,6 +19,7 @@ $(document).ready(function() {
         {x:125, y:95},
         {x:350, y:350}
     ]
+
 
     function drawBall() {
         ctx.fillStyle = "black";

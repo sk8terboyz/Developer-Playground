@@ -4,16 +4,17 @@ $(document).ready(function() {
     
     let score = 0;
     const FULLCOUNT = 10;
-    const GAMETIMER = 30000;    // in miliseconds (30 seconds)
+    const GAMETIMER = 60000;    // in miliseconds (60 seconds)
 
-    const XMAX = canvas.width-30;
+    const XMAX = canvas.width*2;
     const YMAX = canvas.height-30;
     const SPEED = 0.01;
 
-    function getRandomValue(max, min=0, endpoint=false, obj=null) {
+    function getRandomValue(max, min=100, endpoint=false, obj=null) {
         let val = Math.floor(Math.random()*max+1);
         while(val <= min) { val = Math.floor(Math.random()*max+1) }
         if(endpoint && obj != null) {
+            console.log(obj);
             if(obj.x > canvas.width/2) {
                 while(val >= obj.x/1.5) { val = Math.floor(Math.random()*max+1) }
             } else {
@@ -49,13 +50,14 @@ $(document).ready(function() {
     })
 
     function animateSeed(obj) {
-        let startX = getRandomValue(XMAX+100);
         let peak = getRandomValue(XMAX+100);
         let endX = getRandomValue(XMAX+100, 0, true, obj);
-        console.log(startX, peak, endX);
+        console.log(`starting: ${obj.x}`);
+        console.log(`peak: ${peak}`);
+        console.log(`ending: ${endX}`);
         
         const pop = [
-            { transform: `translateX(${startX + "px"}) translateY(0px) rotate(0)` },
+            { transform: `translateX(${obj.x + "px"}) translateY(0px) rotate(0)` },
             { transform: `translateX(${peak + "px"}) translateY(-500px) rotate(360deg)` },
             { transform: `translateX(${endX + "px"}) translateY(0px) rotate(0)`}
         ];
@@ -73,7 +75,7 @@ $(document).ready(function() {
             }, obj.time);      
         });
         // $("#seedling")[0].animate(pop, popTime);
-        console.log($(".seedling"));
+        // console.log($(".seedling"));
     }
 
     function startGame(numObjs) {
@@ -88,16 +90,17 @@ $(document).ready(function() {
         $(".score")[0].innerHTML =`Score: 0`;
         $(".scoreContainer")[0].classList.remove("hidden");
 
-        // Time limit on game (set to 30seconds currently)
+        // Time limit on game (set to 60seconds currently)
         setTimeout(() => {
             gameOver();
         }, GAMETIMER);
 
-        // set timer values (30 seconds added to current time for timer)
-        var timeLimit = new Date().getSeconds() + 30;
+        // set timer values (60 seconds added to current time for timer)
+        var timeLimit = new Date().getSeconds() + 60;
         var now = new Date().getSeconds();
         var distance = timeLimit - now;
         
+        // interval to update timer (every second)
         var timer = setInterval(() => {
             distance--;
             if(distance < 10 ) {
