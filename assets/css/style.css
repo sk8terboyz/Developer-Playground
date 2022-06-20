@@ -388,12 +388,8 @@ html body {
     cursor: default;
 }
 
-.incremental {
-    padding: 0.5em;
-}
-
-.decremental {
-    padding: 0.5em;
+.btn-disabled {
+    background-color: rgba(104, 18, 18, 0.5);
 }
 
 .temp {
@@ -430,9 +426,19 @@ html body {
 
 #lOp {
     border: 2px solid black;
+    border-radius: 0;
 }
 
 #lOp:hover {
     background-color:#410c5f;
     color: white
+}
+
+.calculator-btns {
+    margin: 0;
+    padding: 0;
+}
+
+.numDisplay {
+    overflow-x: hidden;
 }

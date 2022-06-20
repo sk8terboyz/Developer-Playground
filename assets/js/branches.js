@@ -3,7 +3,6 @@ $(document).ready(function() {
     var WIDTH, HEIGHT, X, Y;
     var MAX_LIFE = 300;
     var LINE_WIDTH = 3;
-    var switched = false;
     var color = `rgba(0, 25, 25, 0.05)`
     
     var branches, mouseX, mouseY;
@@ -53,10 +52,6 @@ $(document).ready(function() {
     
     // This function will change the background and colors
     function switchUp() {
-        // Example of how switched can be used for a one time use
-        if(!switched)
-            alert("This button will change the color of the canvas to a random color");
-        switched = true;    // made for additional addons to mark the switchup button has been preseed (one time use for now)
         color = `rgba(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, 0.05)`;
         context.fillStyle = color;
         context.fillRect(0, 0, WIDTH, HEIGHT);
