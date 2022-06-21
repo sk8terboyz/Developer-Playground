@@ -36,26 +36,30 @@
                 "ID": 2,
                 "Name": "Dice",
                 "Description": "This is currently just a simple die that can be 'rolled' as many times as desired and will always give a random value between 1-6"
-            }
-        ],
-        "Project Ideas":[
-            {
-                "ID": 1,
-                "Name": "Hangman",
-                "Description": "This is already created and in one of my github repos, but it would need fine tuning in the styling.",
-                "Likelihood": "75%"
-            },
-            {
-                "ID": 2,
-                "Name": "Calculator",
-                "Description": "I plan for this to be a simple calculator that can take in digits, do simple calculations, then display them. I don't plan going as far to make this a graphing calculator or anything near, but simple calculations are easy.",
-                "Likelihood": "90%"
             },
             {
                 "ID": 3,
+                "Name": "Hangman",
+                "Description": "Considering I already have made hangman, the core functionality will be working, but I plan to redo most of it since I did not like the way it was designed previously."
+            },
+            {
+                "ID": 1,
+                "Name": "P5JS",
+                "Description": "This library was shown to me by a friend, so I created this page for development projects to learn a bit more about it. My friend is always using this page to learn P5JS."
+            }
+        ],
+        "Project Ideas": [
+            {
+                "ID": 1,
                 "Name": "Ball Pit",
                 "Description": "I'm not entirely sure if it would be a ball pit or a bouncing ball game, but I do know I want to make bouncy balls and they aren't as difficult as I initially thought from what I've seen.",
                 "Likelihood": "50%"
+            },
+            {
+                "ID": 2,
+                "Name": "Snake",
+                "Description": "I have already recreated this and the project is in my GitHub, but it would require tweaking to work with this website, so this project is on the back burner currently.",
+                "Likelihood": "90%"
             }
         ]
     }
