@@ -396,6 +396,11 @@ html body {
     margin-top: 10%; 
 }
 
+.savedPatterns {
+    width: 10vw;
+    height: 10vh;
+}
+
 /* Basics */
 
 .basicTitle {
