@@ -4,8 +4,8 @@
             {
                 "default": "../images/bezierCurve/defaultPattern.png",
                 "pattern1": "../images/bezierCurve/pattern1.png",
-                "pattern2": "../images/bezierCurve/defaultPattern.png",
-                "pattern3": "../images/bezierCurve/defaultPattern.png"
+                "pattern2": "../images/bezierCurve/pattern2.png",
+                "pattern3": "../images/bezierCurve/pattern3.png"
             }
         ],
         "default":[

@@ -35,7 +35,7 @@ $(document).ready(function() {
                 break;
         }
         ball.x = points[0].x;
-        ball.y = points[0].x
+        ball.y = points[0].y;
     }
 
     function displayPatterns() {
@@ -97,16 +97,13 @@ $(document).ready(function() {
 
     $("#playBtn").click(function(e) {
         playAnim = true;
-        e["currentTarget"].classList.add("btn-disabled");
+        e["currentTarget"].disabled = true;
     })
     
     $("#resetBtn").click(function(e) {
         playAnim = false;
         ball = {x:30, y:30, speed:0.01, t:0, radius:20};
-        document.querySelectorAll(".value").forEach(val => {
-            val.textContent = 0;
-        })
-        $("#playBtn")[0].classList.remove("btn-disabled");
+        $("#playBtn")[0].disabled = false;
     })
     
     // Saved Patterns Listeners

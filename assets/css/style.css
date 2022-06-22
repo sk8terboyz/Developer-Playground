@@ -377,15 +377,7 @@ html body {
 #bezierCanvas {
     width: 40vw;
     border-radius: 5px;
-    background-color: rgb(209, 209, 209);
-}
-
-.value {
-    border: 2px solid black;
-    background-color: rgb(27, 134, 223);
-    justify-self: center;
-    padding: 0.5em;
-    cursor: default;
+    background-color: rgb(59, 59, 59);
 }
 
 .btn-disabled {
@@ -399,6 +391,18 @@ html body {
 .savedPatterns {
     width: 10vw;
     height: 10vh;
+    border: 2px solid white;
+}
+
+.savedPatterns:hover {
+    width: 11vw;
+    height: 11vh;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+.buttonContainer {
+    margin-top: 1vh;
 }
 
 /* Basics */
@@ -450,6 +454,11 @@ html body {
 
 /* Hangman */
 
+#hangman {
+    background-color: rgb(41, 41, 40);
+    border-radius: 10%;
+}
+
 .letterBtn {
     border: 2px solid black;
     border-radius: 30%;
@@ -465,6 +474,20 @@ html body {
 }
 
 #letterDisplay { 
-    background-color: rgb(41, 40, 40);
+    background-color: rgb(41, 41, 40);
     border-radius: 10%;
+}
+
+#newWord {
+    border: 2px solid black;
+    border-radius: 30%;
+    background-color: rgba(143, 15, 136, 0.664);
+    color: rgb(162, 255, 41);
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+#newWord:hover {
+    background-color: rgba(253, 237, 10, 0.664);
+    color: black;
 }
