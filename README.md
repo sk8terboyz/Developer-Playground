@@ -48,9 +48,3 @@ This website is where I want to develop fun/random projects. It will be a fully 
         - I've been wanting to get into 3D mapping for awhile now, but that may be something restricted towards non web-based languages. I will look into this later on.
     - Bouncy Balls/Ball Pit
         - Bouncy Balls should be doable after I figure out the bouncing kernals in the popcorn game
-
-## Problems:
-- Random User Issue (UNRESOLVED)
-    - My friend tried cloning the repository and when he launched it, the About, Basics, and Bezier Curve pages were broken in one way or another
-    - Fix Ideas:
-        - I'm at a loss
