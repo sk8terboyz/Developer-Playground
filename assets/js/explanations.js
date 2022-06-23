@@ -5,6 +5,7 @@ $(document).ready(function() {
             .then(res => res.json())
             .then(data => {
                 storedData = [...storeData(data["Projects"])];
+                console.log(storedData);
                 if(storedData[0].length > 1) {
                     storedData[0].forEach(project => {
                         // remove the marker from being displayed
@@ -41,8 +42,9 @@ $(document).ready(function() {
             console.log(`Data Missing`);
             return null;
         }
-        // Instantiate array
+        // Instantiate array (wp, dp, & pi are not necessary, but good to have as reference if ever needed, so I will keep it for now)
         projectArray = [["wp"], ["dp"], ["pi"]];
+
         // Get length of each project set
         wpLength = projects["Working Projects"].length;
         dpLength = projects["Developing Projects"].length;

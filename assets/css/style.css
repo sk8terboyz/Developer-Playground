@@ -110,6 +110,14 @@ html body {
     margin: 0;
 }
 
+#homeTitle {
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    text-shadow: -2px 2px rgb(19, 178, 199);
+    color: #0d6efd;
+}
+
 .contentContainer {
     background-color: rgb(33,37,41);
     color: white;
@@ -491,3 +499,82 @@ html body {
     background-color: rgba(253, 237, 10, 0.664);
     color: black;
 }
+
+#overlay {
+    background-color: #000;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	opacity: 0.7;
+	filter: blur(1.5rem);
+	-webkit-filter: blur(1.5rem);
+}
+
+#overlayContent { 
+    background-color: rgb(156, 156, 156);
+	width: 30%;
+	margin: auto;
+	border: 3px solid #1ebed3;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+	top: -310px;
+}
+
+#categoryChoice {
+    background-color: rgb(156, 156, 156);
+	width: 30%;
+	margin: auto;
+	border: 3px solid #1ebed3;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+	top: -310px;
+}
+
+#overlay, #overlayContent, #categoryChoice {
+    display: none;
+}
+
+#cross{
+	position: absolute;
+    left: 94%;
+    top: 0px;
+    color: #cc2e2e;
+	font-weight: bold;
+	background-color: transparent;
+	border: 0
+}
+
+#cross:hover {
+    font-size: 22;
+}
+
+.overlayBtn {
+    background-color: rgb(87, 87, 87);
+    color: white;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 2rem;
+    width: 100%;
+}
+
+
+.overlayBtn:hover {
+    background-color: rgb(11, 188, 194);
+    color: rgb(43, 1, 110);
+}
+
+.disabled {
+    opacity: 25%;
+}
+
+.gameOver {
+    font-size: 6rem;
+    font-family: fantasy;
+}
+

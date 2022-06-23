@@ -2,13 +2,13 @@
     "savedPatterns": {
         "images": [
             {
-                "default": "../images/bezierCurve/defaultPattern.png",
                 "pattern1": "../images/bezierCurve/pattern1.png",
                 "pattern2": "../images/bezierCurve/pattern2.png",
-                "pattern3": "../images/bezierCurve/pattern3.png"
+                "pattern3": "../images/bezierCurve/pattern3.png",
+                "pattern4": "../images/bezierCurve/pattern4.png"
             }
         ],
-        "default":[
+        "pattern1":[
             {
                 "x": 30,
                 "y": 30
@@ -26,7 +26,7 @@
                 "y": 350
             }
         ],
-        "pattern1": [
+        "pattern2": [
             {
                 "x": 120,
                 "y": 303
@@ -44,7 +44,7 @@
                 "y": 297
             }
         ],
-        "pattern2": [
+        "pattern3": [
             {
                 "x": 59,
                 "y": 132
@@ -62,7 +62,7 @@
                 "y": 327
             }
         ],
-        "pattern3": [
+        "pattern4": [
             {
                 "x": 170,
                 "y": 320

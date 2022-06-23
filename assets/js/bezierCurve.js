@@ -19,16 +19,16 @@ $(document).ready(function() {
     function setPoints(index=0) {
         switch (index) {
             case 0: 
-                points = savedPatterns[0]["default"];
-                break;
-            case 1:
                 points = savedPatterns[0]["pattern1"];
                 break;
-            case 2:
+            case 1:
                 points = savedPatterns[0]["pattern2"];
                 break;
-            case 3:
+            case 2:
                 points = savedPatterns[0]["pattern3"];
+                break;
+            case 3:
+                points = savedPatterns[0]["pattern4"];
                 break;
             default:
                 console.error("ERROR: POINTS NOT SET");
@@ -40,10 +40,15 @@ $(document).ready(function() {
 
     function displayPatterns() {
         patternImages = savedPatterns[0]["images"][0];
-        $("#dp")[0].src = patternImages["default"];
         $("#sp1")[0].src = patternImages["pattern1"];
         $("#sp2")[0].src = patternImages["pattern2"];
         $("#sp3")[0].src = patternImages["pattern3"];
+        $("#sp4")[0].src = patternImages["pattern4"];
+        // $("#sp5")[0].src = patternImages[""];
+        // $("#sp6")[0].src = patternImages[""];
+        // $("#sp7")[0].src = patternImages[""];
+        // $("#sp8")[0].src = patternImages[""];
+
     }
 
     function drawBall() {
@@ -92,7 +97,13 @@ $(document).ready(function() {
     }
     
     animate();
-    
+
+    function reset() {
+        playAnim = false;
+        ball = {x:30, y:30, speed:0.01, t:0, radius:20};
+        $("#playBtn")[0].disabled = false;
+    }
+
     // button event listeners
 
     $("#playBtn").click(function(e) {
@@ -101,22 +112,24 @@ $(document).ready(function() {
     })
     
     $("#resetBtn").click(function(e) {
-        playAnim = false;
-        ball = {x:30, y:30, speed:0.01, t:0, radius:20};
-        $("#playBtn")[0].disabled = false;
+        reset();
     })
     
     // Saved Patterns Listeners
-    $("#dp").click(function(e) {
+    $("#sp1").click(function(e) {
+        reset();
         setPoints(0);
     })
-    $("#sp1").click(function(e) {
+    $("#sp2").click(function(e) {
+        reset();
         setPoints(1);
     })
-    $("#sp2").click(function(e) {
+    $("#sp3").click(function(e) {
+        reset();
         setPoints(2);
     })
-    $("#sp3").click(function(e) {
+    $("#sp4").click(function(e) {
+        reset();
         setPoints(3);
     })
 })

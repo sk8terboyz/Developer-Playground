@@ -37,13 +37,13 @@
                     <li><a class="dropdown-item" href="branches.html">Branches</a></li>
                     <li><a class="dropdown-item" href="bezierCurve.html">Bezier Curve</a></li>
                     <li><a class="dropdown-item" href="basics.html">Basics</a></li>
+                    <li><a class="dropdown-item" href="hangman.html">Hangman</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
                     <li><h6 class="dropdown-header">Developing Projects</h6></li>
                     <li><a class="dropdown-item" href="dice.html">Dice</a></li>
                     <li><a class="dropdown-item" href="popcorn.html">Popcorn</a></li>
-                    <li><a class="dropdown-item" href="hangman.html">Hangman</a></li>
                     <li><a class="dropdown-item" href="p5js.html">P5JS</a></li>
                     <li>
                       <hr class="dropdown-divider">
@@ -60,50 +60,99 @@
           </div>
         </div>
       </nav>
-      <br/><br/><br/>
+      <br><br><br>
+      <div id="overlay"></div>
+      <div id="overlayContent">
+        <!-- <button id="cross">&cross;</button> -->
+        <h2>Welcome to Hangman</h2>
+        <h4>Please choose one of the options below</h4>
+        <button class="overlayBtn" id="single" data-toggle="tooltip" data-placement="bottom" title="Play hangman with single words">Single Word</button>
+        <button class="overlayBtn disabled" id="multi" data-toggle="tooltip" data-placement="bottom" title="Disabled" >Multi Word</button>
+        <button class="overlayBtn disabled" id="categories" data-toggle="tooltip" data-placement="bottom" title="Disabled" >Categories</button>
+        <button class="overlayBtn disabled" id="custom" data-toggle="tooltip" data-placement="bottom" title="Disabled" >Custom</button>
+      </div>
+      <div id="categoryChoice">
+        <button id="cross">&cross;</button>
+        <h4>Select a Category</h4>
+        <button class="overlayBtn">Movies</button>
+        <button class="overlayBtn">People</button>
+        <button class="overlayBtn">Games</button>
+        <button class="overlayBtn">Sports</button>
+        <button class="overlayBtn">Animals</button>
+        <button class="overlayBtn">Countries</button>
+        <button class="overlayBtn">Food&Drink</button>
+      </div>
       <div class="container-fluid">
         <div class="row justify-content-evenly">
-            <div class="col-6">
-                <canvas id="hangman" width="600" height="600"></canvas>
+          <div class="col-6">
+              <canvas id="hangman" width="600" height="600"></canvas>
+          </div>
+          <div class="row col-6">
+            <div class="col-12 row letterArea">
+              <canvas id="letterDisplay"></canvas>
             </div>
-            <div class="row col-6">
-              <div class="col-12 row letterArea">
-                <canvas id="letterDisplay"></canvas>
-              </div>
-              <div class="col letterBtns row justify-content-evenly">
-                <button class="col-1 btn letterBtn">A</button>
-                <button class="col-1 btn letterBtn">B</button>
-                <button class="col-1 btn letterBtn">C</button>
-                <button class="col-1 btn letterBtn">D</button>
-                <button class="col-1 btn letterBtn">E</button>
-                <button class="col-1 btn letterBtn">F</button>
-                <button class="col-1 btn letterBtn">G</button>
-                <button class="col-1 btn letterBtn">H</button>
-                <button class="col-1 btn letterBtn">I</button>
-                <button class="col-1 btn letterBtn">J</button>
-                <button class="col-1 btn letterBtn">K</button>
-                <button class="col-1 btn letterBtn">L</button>
-                <button class="col-1 btn letterBtn">M</button>
-                <button class="col-1 btn letterBtn">N</button>
-                <button class="col-1 btn letterBtn">O</button>
-                <button class="col-1 btn letterBtn">P</button>
-                <button class="col-1 btn letterBtn">Q</button>
-                <button class="col-1 btn letterBtn">R</button>
-                <button class="col-1 btn letterBtn">S</button>
-                <button class="col-1 btn letterBtn">T</button>
-                <button class="col-1 btn letterBtn">U</button>
-                <button class="col-1 btn letterBtn">V</button>
-                <button class="col-1 btn letterBtn">W</button>
-                <button class="col-1 btn letterBtn">X</button>
-                <button class="col-1 btn letterBtn">Y</button>
-                <button class="col-1 btn letterBtn">Z</button>
-              </div>
-              <div class="row justify-content-center">
-                <button class="col-2 btn" id="newWord" data-toggle="tooltip" data-placement="bottom" title="Get a new word from the word bank (resets game)">New Word</button>
-              </div>
+            <div class="col letterBtns row justify-content-evenly">
+              <button class="col-1 btn letterBtn">A</button>
+              <button class="col-1 btn letterBtn">B</button>
+              <button class="col-1 btn letterBtn">C</button>
+              <button class="col-1 btn letterBtn">D</button>
+              <button class="col-1 btn letterBtn">E</button>
+              <button class="col-1 btn letterBtn">F</button>
+              <button class="col-1 btn letterBtn">G</button>
+              <button class="col-1 btn letterBtn">H</button>
+              <button class="col-1 btn letterBtn">I</button>
+              <button class="col-1 btn letterBtn">J</button>
+              <button class="col-1 btn letterBtn">K</button>
+              <button class="col-1 btn letterBtn">L</button>
+              <button class="col-1 btn letterBtn">M</button>
+              <button class="col-1 btn letterBtn">N</button>
+              <button class="col-1 btn letterBtn">O</button>
+              <button class="col-1 btn letterBtn">P</button>
+              <button class="col-1 btn letterBtn">Q</button>
+              <button class="col-1 btn letterBtn">R</button>
+              <button class="col-1 btn letterBtn">S</button>
+              <button class="col-1 btn letterBtn">T</button>
+              <button class="col-1 btn letterBtn">U</button>
+              <button class="col-1 btn letterBtn">V</button>
+              <button class="col-1 btn letterBtn">W</button>
+              <button class="col-1 btn letterBtn">X</button>
+              <button class="col-1 btn letterBtn">Y</button>
+              <button class="col-1 btn letterBtn">Z</button>
             </div>
-            <button id="getWordBank">Set Word Bank</button>
+            <div class="row justify-content-center">
+              <button class="col-2 btn" id="newWord" data-toggle="tooltip" data-placement="bottom" title="Get new word (resets game)">New Word</button>
+            </div>
+          </div>
+            <!-- <button id="getWordBank">Set Word Bank</button> -->
         </div>
+        <!-- <div class="gameOver contiainer">
+          <div class="winner row justify-content-evenly">
+            <div class="col-7 row justify-content-center" id="you">
+              <div class="gameOver win col-1">Y</div>
+              <div class="gameOver win col-1">O</div>
+              <div class="gameOver win col-1">U</div>
+            </div>
+            <div class="col-7 row justify-content-center" id="win">
+              <div class="gameOver win col-1">W</div>
+              <div class="gameOver win col-1">I</div>
+              <div class="gameOver win col-1">N</div>
+            </div>
+          </div>
+          <div class="loser row justify-content-center">
+            <div class="col-7 row justify-content-center" id="game">
+              <div class="gameOver lost col-1">G</div>
+              <div class="gameOver lost col-1">A</div>
+              <div class="gameOver lost col-1">M</div>
+              <div class="gameOver lost col-1">E</div>
+            </div>
+            <div class="col-7 row justify-content-center" id="over">
+              <div class="gameOver lost col-1">O</div>
+              <div class="gameOver lost col-1">V</div>
+              <div class="gameOver lost col-1">E</div>
+              <div class="gameOver lost col-1">R</div>
+            </div>
+          </div>
+        </div> -->
       </div>
       
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

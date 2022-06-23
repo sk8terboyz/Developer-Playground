@@ -10,13 +10,13 @@
             {
                 "ID": 2,
                 "Name": "Bezier Curve",
-                "Future Updates": "Likely",
+                "Future Updates": "Somewhat Likely",
                 "Description": "The Bezier Curve allows an object to follow a set path based on the positioning of anchor points that adjust the movement style of the object."
             },
             {
                 "ID": 3,
                 "Name": "Basics",
-                "Future Updates": "Highly Likely",
+                "Future Updates": "Likely",
                 "Description": "This is the page I designated for basic projects to be developed I have already created a random number generator and started development on the calculator. Both of these projects are relatively easy, but I will not finish each basic project quickly because rush jobs are never great, and I want to enjoy also learning new css and bootstrap styling."
             },
             {
@@ -24,6 +24,12 @@
                 "Name": "Explanation",
                 "Future Updates": "Highly Likely",
                 "Description": "This page is used to explain each of my projects in a consolidated place. I plan for this data to always be dynamically created/updated making use of fetch requests. Currently it is simply setup to read a JSON file, but focusing on SQL for larger databases would be more beneficial."
+            },
+            {
+                "ID": 3,
+                "Name": "Hangman",
+                "Future Updates": "Likely",
+                "Description": "The classic game Hangman remade with different gamemodes (some still in development)."
             }
         ],
         "Developing Projects": [
@@ -39,11 +45,6 @@
             },
             {
                 "ID": 3,
-                "Name": "Hangman",
-                "Description": "Considering I already have made hangman, the core functionality will be working, but I plan to redo most of it since I did not like the way it was designed previously."
-            },
-            {
-                "ID": 1,
                 "Name": "P5JS",
                 "Description": "This library was shown to me by a friend, so I created this page for development projects to learn a bit more about it. My friend is always using this page to learn P5JS."
             }
@@ -60,6 +61,12 @@
                 "Name": "Snake",
                 "Description": "I have already recreated this and the project is in my GitHub, but it would require tweaking to work with this website, so this project is on the back burner currently.",
                 "Likelihood": "90%"
+            },
+            {
+                "ID": 3,
+                "Name": "Animation Cognition",
+                "Description": "The Animation Cognition page would be specifically to mess around with different animation types. Whether this be raw CSS, raw JS, mix of them, or third-party libraries. P5JS would most likely be moved into this page.",
+                "Likelihood": "50%"
             }
         ]
     }
