@@ -61,12 +61,12 @@
         </div>
     </nav>
     <div class="container-fluid first">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center border-bottom border-info">
         <div class="col-6">
           <h3 class="basicTitle">Back to the Basics</h3>
         </div>
       </div>
-      <div class="row justify-content-evenly">
+      <div class="row justify-content-evenly border-bottom border-info">
         <div class="col-4 row justify-content-evenly rng align-self-center">
           <h3 class="col-10">Random Number Generator</h3>
           <div class="min col-3">
@@ -85,12 +85,54 @@
           </div>
         </div>
         <div class="col-1 vr"></div>
-        <div class="col-4 row justify-content-evenly calculator">
-          <h3 class="col-8 align-self-center">Calculator</h3>
+        <div class="col-2 calculator">
+          <!-- <div class="row justify-content-center"></div> -->
+          <table>
+            <tr>
+              <h3>Calculator V2</h3>
+            </tr>
+            <tr>
+              <td colspan="5"><input type="text" disabled id="calcResult" value=""></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="C" class="calcBtns" data-toggle="tooltip" title="Clear"/></td>
+              <td><input type="button" value="%" class="calcBtns" data-toggle="tooltip" title="Modulo"/></td>
+              <td><input type="button" value="()" class="calcBtns" data-toggle="tooltip" title="Parenthesis"/></td>
+              <td><input type="button" value="/" class="calcBtns" data-toggle="tooltip" title="Division"/></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="7" class="calcBtns" data-toggle="tooltip" title="Seven"/></td>
+              <td><input type="button" value="8" class="calcBtns" data-toggle="tooltip" title="Eight"/></td>
+              <td><input type="button" value="9" class="calcBtns" data-toggle="tooltip" title="Nine"/></td>
+              <td><input type="button" value="*" class="calcBtns" data-toggle="tooltip" title="Multiplication"/></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="4" class="calcBtns" data-toggle="tooltip" title="Four"/></td>
+              <td><input type="button" value="5" class="calcBtns" data-toggle="tooltip" title="Five"/></td>
+              <td><input type="button" value="6" class="calcBtns" data-toggle="tooltip" title="Six"/></td>
+              <td><input type="button" value="-" class="calcBtns" data-toggle="tooltip" title="Subtraction"/></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="1" class="calcBtns" data-toggle="tooltip" title="One"/></td>
+              <td><input type="button" value="2" class="calcBtns" data-toggle="tooltip" title="Two"/></td>
+              <td><input type="button" value="3" class="calcBtns" data-toggle="tooltip" title="Three"/></td>
+              <td><input type="button" value="+" class="calcBtns" data-toggle="tooltip" title="Addition"/></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="+/-" class="calcBtns" data-toggle="tooltip" title="Negative/Postive"/></td>
+              <td><input type="button" value="0" class="calcBtns" data-toggle="tooltip" title="Zero"/></td>
+              <td><input type="button" value="." class="calcBtns" data-toggle="tooltip" title="Point"/></td>
+              <td><input type="button" value="=" class="calcBtns" data-toggle="tooltip" title="Equals"/></td>
+            </tr>
+          </table>
+        </div>
+        <!-- <div class="col-4 row justify-content-evenly calculator">
+          <h3 class="col-8 align-self-center">Calculator V1</h3>
           <hr/>
           <div class="row">
             <div class="numDisplay">
               <h3>I've given up here beacuse 2+2=🐟</h2>
+              <input name="" id="" cols="15" rows="1"></input>
             </div>
           </div>
           <div class="row buttons">
@@ -123,7 +165,18 @@
               <button type="button" class="btn btn-info" id="lOp">=</button>
             </div>
           </div>
+        </div> -->
+      </div>
+      <div class="row justify-content-evenly border-bottom border-info">
+        <div class="quadraticContainer col-4 row">
+          <h4 class="col-6">Quadratic Curve</h4>
+          <button class="btn btn-primary col-2" id="drawCurve">draw</button>
+          <span class="col-1"></span>
+          <button class="btn btn-info col-2" id="resetCurve">reset</button>
+          <canvas id="quadraticCanvas"></canvas>
         </div>
+        <div class="col-1 vr"></div>
+        <div class="col-4">hello world</div>
       </div>
     </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
