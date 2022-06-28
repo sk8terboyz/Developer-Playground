@@ -108,8 +108,9 @@ $(document).ready(function() {
     // button event listeners
 
     $("#playBtn").click(function(e) {
+        reset();
         playAnim = true;
-        e["currentTarget"].disabled = true;
+        // e["currentTarget"].disabled = true;
     })
     
     $("#resetBtn").click(function(e) {
