@@ -38,6 +38,7 @@ html body {
 /* Home */
 .main {
     background-color: rgb(44, 126, 75);
+    box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.5);
 }
 
 .mainContent > p {
@@ -51,12 +52,14 @@ html body {
     /* background-color: rgb(9, 97, 56); */
     background-image: linear-gradient(to right, rgb(173, 15, 15), rgb(23, 53, 189));
     margin-right: 5%;
+    box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.5);
 }
 
 .rightContainer {
     /* background-color: rgb(9, 97, 56); */
     background-image: linear-gradient(to left, rgb(173, 15, 15), rgb(23, 53, 189));
     margin-left: 5%;
+    box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.5);
 }
 
 .titleContainer {
@@ -143,10 +146,11 @@ html body {
 
 /* Branches */
 
-#canvas {
+#branchCanvas {
     position: relative;
     top: 100px;
     left: 50px;
+    cursor: crosshair;
 }
 
 .switch-up {
@@ -438,7 +442,7 @@ html body {
     font-weight: bolder;
 }
 
-/* Random Number Generator */
+    /* Random Number Generator */
 .rng {
     background-color: rgb(33,37,41);
     color: white;
@@ -458,7 +462,7 @@ html body {
     font-weight: 500;
     font-family: monospace;
 }
- /* Calculator V1 */
+    /* Calculator V1 */
 /* #lOp {
     border: 2px solid black;
     border-radius: 0;
@@ -482,7 +486,7 @@ html body {
     overflow-x: hidden;
 } */
 
-/* Calculator V2 */
+    /* Calculator V2 */
 .calcBtns {
     background-color: #5395f8;
     color: black;
@@ -505,11 +509,29 @@ html body {
     color: black;
 }
 
-/* Quadratic Curve */
+    /* Quadratic Curve */
 #quadraticCanvas {
     height: 50vh;
     width: 100%;
     background-color: rgb(46, 46, 46);
+}
+
+    /* Mouse Coords */
+#mouseCanvas {
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+    cursor: crosshair;
+}
+
+/* #modeChangeBtn {
+
+} */
+
+#coordsContainer {
+    height: 20px;
+    width: 20px;
+    background-color: white;
 }
 
 /* Hangman */
@@ -596,20 +618,6 @@ html body {
     display: none;
 }
 
-#cross{
-	position: absolute;
-    left: 94%;
-    top: 0px;
-    color: #cc2e2e;
-	font-weight: bold;
-	background-color: transparent;
-	border: 0
-}
-
-#cross:hover {
-    font-size: 22;
-}
-
 .overlayBtn {
     background-color: rgb(87, 87, 87);
     color: white;
@@ -621,7 +629,7 @@ html body {
 }
 
 
-.overlayBtn:hover {
+.overlayBtn:hover, .overlayBtn:focus {
     background-color: rgb(11, 188, 194);
     color: rgb(43, 1, 110);
 }

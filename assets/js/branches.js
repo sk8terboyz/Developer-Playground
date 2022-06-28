@@ -23,7 +23,7 @@ $(document).ready(function() {
         HEIGHT = window.innerHeight;
     
         canvas = document.createElement("canvas");
-        canvas.setAttribute('id', 'canvas')
+        canvas.setAttribute('id', 'branchCanvas')
         canvas.width = WIDTH-100;
         canvas.height = HEIGHT-200;
         canvas.innerHTML = "Your browser does not support the HTML canvas.";

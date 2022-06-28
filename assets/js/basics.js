@@ -101,4 +101,49 @@ $(document).ready(function() {
         let ctx = cvs.getContext("2d");
         ctx.clearRect(0, 0, cvs.width, cvs.height);
     })
+
+    // Mouse Coords
+    var keyboardOnly = false;
+    $("#modeChangeBtn").click(function(e) {
+        console.log("Keyboard mode enabled");
+        keyboardOnly = true;
+        // remove cursor, display crosshair over canvas (move crosshair with arrow keys), display coords of the crosshair
+        console.log($("coordsContainer"));
+        
+    })
+
+    $("#mouseCanvas").mouseover(function(e) {
+        
+    })
+
+    $("#mouseCanvas").mousedown(function(e) {
+        let cvs = $("#mouseCanvas")[0];
+        let ctx = cvs.getContext("2d");
+        
+        let rect = cvs.getBoundingClientRect();
+        console.log(rect);
+        console.log(cvs);
+        
+        let x = (e.clientX - rect.left) * (cvs.width / rect.width);
+        let y = (e.clientY - rect.top) * (cvs.height / rect.height);
+
+        // let x = e.clientX - rect.x;
+        // let y = e.clientY - rect.y;
+
+        // let x = (e.clientX - rect.left) / (rect.right - rect.left) * cvs.width;
+        // let y = (e.clientY - rect.top) / (rect.bottom - rect.top) * cvs.height;
+
+        ctx.fillStyle = `rgb(0, 0, 0)`;
+        ctx.fillRect(x, y, 4, 4);
+
+        console.log(Math.floor(x), Math.floor(y));
+    })
+
+    document.addEventListener('keydown', function(e) {
+        console.log(e.code);
+        if(e.code == "Escape" && keyboardOnly) {
+            keyboardOnly = false;
+            // bring back cursor
+        }
+    })
 })
