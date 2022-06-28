@@ -16,8 +16,8 @@ This website is where I want to develop fun/random projects. It will be a fully 
         - This will be a game where kernals will fly around the screen for the user to click on. Once a kernal is "popped" (clicked on) it will burst into popcorn and add to the player's score.
     - Dice
         - I want to recreate some classic games with dice, so right now this is just a playground for developing each aspect of the dice.
-    - P5JS
-        - My friend showed this library to me and they wanted to mess around with it on the website, so I created this page for that purpose. This also follows a similar page idea of the "Animation Playground", so I may change to this to be a sub-section, or sub-page, later on.
+    - Animations
+        - This is where I plan for all animations to be consolidated (even if they are used in a different part of the website). This allows for a consolidated space to bring in new animation libraries and try them out. I plan to allow this to import/pull from other html files in order to accomplish this (kind of like Jekyll/Liquid does).
 - Active Projects
     - Active projects are any projects that have the core functionality working. This does not mean they are complete, just working.
     - Branches

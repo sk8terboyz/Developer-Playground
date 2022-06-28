@@ -56,6 +56,7 @@ $(document).ready(function() {
         ctx.beginPath();
         ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI*2, false);
         ctx.fill();
+        $("#bcCoords")[0].textContent = `X: ${Math.floor(ball.x)} Y: ${Math.floor(ball.y)}`;
     }
 
     function moveBallInBezierCurve() {
