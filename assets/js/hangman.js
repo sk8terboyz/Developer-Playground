@@ -55,7 +55,7 @@ $(document).ready(function() {
 
     function getSingleWords() {
         // get all single words
-        fetch('../data/singleWordList.json')
+        fetch('../data/hangman/singleWordList.json')
         .then(res => res.json())
         .then(data => {
             data.forEach(d => {

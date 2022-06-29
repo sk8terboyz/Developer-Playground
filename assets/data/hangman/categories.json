@@ -1,0 +1,39 @@
+{
+    "Category List": [
+        "movies",
+        "people",
+        "games",
+        "sports",
+        "animals",
+        "countries",
+        "food&drink"
+    ],
+    "movies": [
+        "",
+        ""
+    ],
+    "people": [
+        "",
+        ""
+    ],
+    "games": [
+        "",
+        ""
+    ],
+    "sports": [
+        "",
+        ""
+    ],
+    "animals": [
+        "",
+        ""
+    ],
+    "countries": [
+        "",
+        ""
+    ],
+    "food&drink": [
+        "",
+        ""
+    ]
+}
