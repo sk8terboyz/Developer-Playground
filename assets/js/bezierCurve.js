@@ -2,7 +2,8 @@ $(document).ready(function() {
     const canvas = document.getElementById("bezierCanvas");
     const ctx = canvas.getContext("2d");
     let savedPatterns = [];
-    let points = []
+    let points = [];
+    let showCoords = false;
 
     // get all saved patterns
     fetch('../data/bcPatterns.json')
@@ -106,6 +107,10 @@ $(document).ready(function() {
     }
 
     // button event listeners
+
+    $("#showCoords").click(function(e) {
+        $("#bcCoords")[0].classList.toggle("hidden");
+    })
 
     $("#playBtn").click(function(e) {
         reset();

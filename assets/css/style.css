@@ -5,7 +5,7 @@ html body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: rgb(13, 167, 128);
+    background-color: rgb(17, 182, 141);
 }
 
 /* Universal Navbar */
@@ -37,7 +37,7 @@ html body {
 
 /* Home */
 .main {
-    background-color: rgb(44, 126, 75);
+    background-color: rgb(85, 180, 121);
     box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.5);
 }
 
@@ -71,7 +71,7 @@ html body {
 }
 
 #welcomeMsg {
-    color:white
+    color:rgb(54, 54, 54);
 }
 
 #homeLine {
@@ -117,8 +117,8 @@ html body {
     font-size: 3rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 600;
-    text-shadow: -2px 2px rgb(19, 178, 199);
-    color: #0d6efd;
+    text-shadow: -2px 2px rgb(14, 101, 112);
+    color: #12cae2;
 }
 
 .contentContainer {
@@ -127,11 +127,11 @@ html body {
 }
 
 #contentHeader {
-    color: #0d6efd;
+    color: #12cae2; 
 }
 
 #contentSubHeader {
-    color: #0993a5; 
+    color: #77a3e6;
 }
 
 .scrollspy {
@@ -140,8 +140,13 @@ html body {
     padding: 1%;
 }
 
-.project-link {
+.project-link, .nav-link {
     margin-top: 1.5rem;
+    color: #5397fd;
+}
+
+#displayer {
+    font-size: 1.5rem;
 }
 
 /* Branches */
@@ -427,11 +432,11 @@ html body {
     margin-top: 1vh;
 }
 
-#bcXCoords, #bcYCoords {
-    width: 50%;
+#bcCoords {
     margin: 0;
     padding: 0;
     font-size: 1.5rem;
+    font-weight: 600;
 }
 
 /* Basics */
@@ -522,6 +527,7 @@ html body {
     width: 100%;
     background-color: rgb(46, 46, 46);
     cursor: crosshair;
+    padding: 0;
 }
 
 /* #modeChangeBtn {
@@ -598,7 +604,8 @@ html body {
 	border-radius: 10px;
 	padding: 20px;
 	text-align: center;
-	position: relative;
+	position: absolute;
+    left: 35%;
 	top: -310px;
 }
 
@@ -643,3 +650,10 @@ html body {
     font-family: fantasy;
 }
 
+/* Cursor */
+
+#cursorCanvas {
+    background-color: black;
+    margin: auto;
+    width: 70%;
+}

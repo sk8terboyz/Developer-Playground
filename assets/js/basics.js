@@ -122,21 +122,29 @@ $(document).ready(function() {
         
         let rect = cvs.getBoundingClientRect();
         console.log(rect);
-        console.log(cvs);
+        // console.log(cvs);
+        // console.log(ctx.canvas.offsetLeft);
         
-        let x = (e.clientX - rect.left) * (cvs.width / rect.width);
-        let y = (e.clientY - rect.top) * (cvs.height / rect.height);
+        // let x = e.clientX - ctx.canvas.offsetLeft;
+        // let y = e.clientY - ctx.canvas.offsetTop;
 
-        // let x = e.clientX - rect.x;
-        // let y = e.clientY - rect.y;
+        // let x = (e.clientX - rect.left) * (cvs.width / rect.width);
+        // let y = (e.clientY - rect.top) * (cvs.height / rect.height);
+
+        let x = Math.round((e.clientX - rect.left));
+        let y = Math.round((e.clientY - rect.top));
+
+        console.log(`clientX = ${e.clientX} \n clientY = ${e.clientY}`);
 
         // let x = (e.clientX - rect.left) / (rect.right - rect.left) * cvs.width;
         // let y = (e.clientY - rect.top) / (rect.bottom - rect.top) * cvs.height;
 
-        ctx.fillStyle = `rgb(0, 0, 0)`;
+        ctx.fillStyle = randomColor();
         ctx.fillRect(x, y, 4, 4);
 
-        console.log(Math.floor(x), Math.floor(y));
+        // ctx.fillRect(0, 0, 5, 5);
+
+        $("#mouseCoords")[0].textContent = `X: ${x}  |  Y: ${y}  | XOffset: ${ctx.canvas.offsetLeft}`;
     })
 
     document.addEventListener('keydown', function(e) {
