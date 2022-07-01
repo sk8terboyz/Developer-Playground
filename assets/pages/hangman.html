@@ -66,21 +66,21 @@
       <div id="overlayContent">
         <h2>Welcome to Hangman</h2>
         <h4>Please choose one of the options below</h4>
-        <button class="overlayBtn" id="single" data-toggle="tooltip" data-placement="bottom" title="Play hangman with single words">Single Word</button>
+        <button class="overlayBtn" id="single" data-toggle="tooltip" data-placement="bottom" title="Play hangman with single words">Orginal</button>
         <button class="overlayBtn disabled" id="multi" data-toggle="tooltip" data-placement="bottom" title="Disabled" >Multi Word</button>
         <button class="overlayBtn disabled" id="categories" data-toggle="tooltip" data-placement="bottom" title="Disabled" >Categories</button>
         <button class="overlayBtn disabled" id="custom" data-toggle="tooltip" data-placement="bottom" title="Disabled" >Custom</button>
       </div>
-      <div id="categoryChoice">
-        <button id="cross">&cross;</button>
+      <div id="categoryChoice" class="hidden">
+        <!-- <button id="cross">&cross;</button> -->
         <h4>Select a Category</h4>
-        <button class="overlayBtn">Movies</button>
-        <button class="overlayBtn">People</button>
-        <button class="overlayBtn">Games</button>
-        <button class="overlayBtn">Sports</button>
-        <button class="overlayBtn">Animals</button>
-        <button class="overlayBtn">Countries</button>
-        <button class="overlayBtn">Food&Drink</button>
+        <button class="categoryBtn" id="movie">Movies</button>
+        <button class="categoryBtn" id="people">People</button>
+        <button class="categoryBtn" id="games">Games</button>
+        <button class="categoryBtn" id="sports">Sports</button>
+        <button class="categoryBtn" id="animals">Animals</button>
+        <button class="categoryBtn" id="countries">Countries</button>
+        <button class="categoryBtn" id="food">Food & Drink</button>
       </div>
       <div class="container-fluid">
         <div class="row justify-content-evenly">

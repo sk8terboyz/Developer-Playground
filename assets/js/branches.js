@@ -44,8 +44,10 @@ $(document).ready(function() {
             var e = window.event;
         
         // calculations made to get the branch starting point to match cursor
-        mouseX = e.clientX-50;
-        mouseY = e.clientY-180;
+        mouseX = e.clientX-context.canvas.offsetLeft;
+        mouseY = e.clientY-context.canvas.offsetTop;
+
+        console.log(mouseX, mouseY);
     
         branches.push(new Branch(mouseX, mouseY, MAX_LIFE));
     }

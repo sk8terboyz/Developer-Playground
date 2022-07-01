@@ -5,7 +5,11 @@
                 "pattern1": "../images/bezierCurve/pattern1.png",
                 "pattern2": "../images/bezierCurve/pattern2.png",
                 "pattern3": "../images/bezierCurve/pattern3.png",
-                "pattern4": "../images/bezierCurve/pattern4.png"
+                "pattern4": "../images/bezierCurve/pattern4.png",
+                "pattern5": "../images/bezierCurve/pattern5.png",
+                "pattern6": "../images/bezierCurve/pattern6.png",
+                "pattern7": "../images/bezierCurve/pattern7.png",
+                "pattern8": "../images/bezierCurve/pattern8.png"
             }
         ],
         "pattern1":[
@@ -78,6 +82,78 @@
             {
                 "x": 440,
                 "y": 320
+            }
+        ],
+        "pattern5": [
+            {
+                "x": 129,
+                "y": 498
+            },
+            {
+                "x": 20,
+                "y": 10
+            },
+            {
+                "x": 600,
+                "y": 300
+            },
+            {
+                "x": 60,
+                "y": 420
+            }
+        ],
+        "pattern6": [
+            {
+                "x": 50,
+                "y": 550
+            },
+            {
+                "x": 0,
+                "y": 0
+            },
+            {
+                "x": 600,
+                "y": 0
+            },
+            {
+                "x": 550,
+                "y": 550
+            }
+        ],
+        "pattern7": [
+            {
+                "x": 40,
+                "y": 40
+            },
+            {
+                "x": 0,
+                "y": 600
+            },
+            {
+                "x": 600,
+                "y": 600
+            },
+            {
+                "x": 560,
+                "y": 40
+            }
+        ],
+        "pattern8": [
+            {
+                "x": 50,
+                "y": 50
+            },
+            {
+                "x": 600,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 600
+            },
+            {
+                "x": 550,
+                "y": 550
             }
         ]
     }

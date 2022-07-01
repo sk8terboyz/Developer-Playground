@@ -47,11 +47,53 @@ $(document).ready(function() {
         // start multi-word gamemode
     })
     $("#categories").click(function() {
+        // Hide menu overlay options
+        $("#overlayContent").hide();
+        $("#overlayContent").css("top", "-310px");
         // Display category overlay choices
+        $("#categoryChoice").show();
+        $("#categoryChoice").animate({top: "100"});
     })
     $("#custom").click(function() {
         // Allow user to enter their own words into new array (maybe allow imports of txt files with words)
     })
+
+    // category option event listeners
+    $("#movie").click(function(e) {
+        // remove category choices
+        hideCategories();
+    })
+    $("#people").click(function(e) {
+        // remove category choices
+        hideCategories();
+    })
+    $("#games").click(function(e) {
+        // remove category choices
+        hideCategories();
+    })
+    $("#sports").click(function(e) {
+        // remove category choices
+        hideCategories();
+    })
+    $("#animals").click(function(e) {
+        // remove category choices
+        hideCategories();
+    })
+    $("#countries").click(function(e) {
+        // remove category choices
+        hideCategories();
+    })
+    $("#food").click(function(e) {
+        // remove category choices
+        hideCategories();
+        
+    })
+
+    function hideCategories() {
+        $("#overlay").hide();
+        $("#categoryChoice").hide();
+        $("#categoryChoice").css("top", "-310px");
+    }
 
     function getSingleWords() {
         // get all single words

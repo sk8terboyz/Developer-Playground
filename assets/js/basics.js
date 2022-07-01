@@ -12,7 +12,6 @@ $(document).ready(function() {
         } else {
             $("#result")[0].innerHTML = "N/A";
         }
-        console.log(res);
     })
     
     // Calculator
@@ -104,16 +103,19 @@ $(document).ready(function() {
 
     // Mouse Coords
     var keyboardOnly = false;
-    $("#modeChangeBtn").click(function(e) {
-        console.log("Keyboard mode enabled");
-        keyboardOnly = true;
-        // remove cursor, display crosshair over canvas (move crosshair with arrow keys), display coords of the crosshair
-        console.log($("coordsContainer"));
-        
+    $("#toggleCoords").click(function(e) {
+        $("#mouseCoords")[0].classList.toggle('hidden');
     })
 
-    $("#mouseCanvas").mouseover(function(e) {
+    $("#mouseCanvas").mousemove(function(e) {
+        let cvs = $("#mouseCanvas")[0];
+        let ctx = cvs.getContext("2d");
         
+        let rect = cvs.getBoundingClientRect();
+
+        let x = Math.round((e.clientX - rect.left)*elementScaleWidth(e));
+        let y = Math.round((e.clientY - rect.top)*elementScaleHeight(e));
+        $("#mouseCoords")[0].textContent = `X: ${x}  |  Y: ${y}`;
     })
 
     $("#mouseCanvas").mousedown(function(e) {
@@ -121,31 +123,21 @@ $(document).ready(function() {
         let ctx = cvs.getContext("2d");
         
         let rect = cvs.getBoundingClientRect();
-        console.log(rect);
-        // console.log(cvs);
-        // console.log(ctx.canvas.offsetLeft);
-        
-        // let x = e.clientX - ctx.canvas.offsetLeft;
-        // let y = e.clientY - ctx.canvas.offsetTop;
 
-        // let x = (e.clientX - rect.left) * (cvs.width / rect.width);
-        // let y = (e.clientY - rect.top) * (cvs.height / rect.height);
-
-        let x = Math.round((e.clientX - rect.left));
-        let y = Math.round((e.clientY - rect.top));
-
-        console.log(`clientX = ${e.clientX} \n clientY = ${e.clientY}`);
-
-        // let x = (e.clientX - rect.left) / (rect.right - rect.left) * cvs.width;
-        // let y = (e.clientY - rect.top) / (rect.bottom - rect.top) * cvs.height;
+        let x = Math.round((e.clientX - rect.left)*elementScaleWidth(e));
+        let y = Math.round((e.clientY - rect.top)*elementScaleHeight(e));
 
         ctx.fillStyle = randomColor();
         ctx.fillRect(x, y, 4, 4);
-
-        // ctx.fillRect(0, 0, 5, 5);
-
-        $("#mouseCoords")[0].textContent = `X: ${x}  |  Y: ${y}  | XOffset: ${ctx.canvas.offsetLeft}`;
     })
+
+    function elementScaleWidth(e) {
+        return e.currentTarget.offsetWidth === 0 ? 0 : (e.currentTarget.width/e.currentTarget.offsetWidth);
+    }
+
+    function elementScaleHeight(e) {
+        return e.currentTarget.offsetHeight === 0 ? 0 : (e.currentTarget.height/e.currentTarget.offsetHeight);
+    }
 
     document.addEventListener('keydown', function(e) {
         console.log(e.code);

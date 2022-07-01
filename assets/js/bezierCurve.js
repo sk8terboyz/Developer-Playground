@@ -31,6 +31,18 @@ $(document).ready(function() {
             case 3:
                 points = savedPatterns[0]["pattern4"];
                 break;
+            case 4:
+                points = savedPatterns[0]["pattern5"];
+                break;
+            case 5:
+                points = savedPatterns[0]["pattern6"];
+                break;
+            case 6:
+                points = savedPatterns[0]["pattern7"];
+                break;
+            case 7:
+                points = savedPatterns[0]["pattern8"];
+                break;
             default:
                 console.error("ERROR: POINTS NOT SET");
                 break;
@@ -45,10 +57,10 @@ $(document).ready(function() {
         $("#sp2")[0].src = patternImages["pattern2"];
         $("#sp3")[0].src = patternImages["pattern3"];
         $("#sp4")[0].src = patternImages["pattern4"];
-        // $("#sp5")[0].src = patternImages[""];
-        // $("#sp6")[0].src = patternImages[""];
-        // $("#sp7")[0].src = patternImages[""];
-        // $("#sp8")[0].src = patternImages[""];
+        $("#sp5")[0].src = patternImages["pattern5"];
+        $("#sp6")[0].src = patternImages["pattern6"];
+        $("#sp7")[0].src = patternImages["pattern7"];
+        $("#sp8")[0].src = patternImages["pattern8"];
 
     }
 
@@ -138,5 +150,21 @@ $(document).ready(function() {
     $("#sp4").click(function(e) {
         reset();
         setPoints(3);
+    })
+    $("#sp5").click(function(e) {
+        reset();
+        setPoints(4);
+    })
+    $("#sp6").click(function(e) {
+        reset();
+        setPoints(5);
+    })
+    $("#sp7").click(function(e) {
+        reset();
+        setPoints(6);
+    })
+    $("#sp8").click(function(e) {
+        reset();
+        setPoints(7);
     })
 })

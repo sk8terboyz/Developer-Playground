@@ -140,9 +140,12 @@ html body {
     padding: 1%;
 }
 
-.project-link, .nav-link {
-    margin-top: 1.5rem;
+.explanationLink {
     color: #5397fd;
+}
+
+.subLink {
+    font-size: 1.25rem;
 }
 
 #displayer {
@@ -530,6 +533,12 @@ html body {
     padding: 0;
 }
 
+#mouseCoords {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
 /* #modeChangeBtn {
 
 } */
@@ -596,20 +605,20 @@ html body {
 	-webkit-filter: blur(1.5rem);
 }
 
-#overlayContent { 
+#overlayContent, #categoryChoice { 
     background-color: rgb(156, 156, 156);
-	width: 30%;
+	width: 35%;
 	margin: auto;
 	border: 3px solid #1ebed3;
 	border-radius: 10px;
 	padding: 20px;
 	text-align: center;
 	position: absolute;
-    left: 35%;
+    left: 30%;
 	top: -310px;
 }
 
-#categoryChoice {
+/* #categoryChoice {
     background-color: rgb(156, 156, 156);
 	width: 30%;
 	margin: auto;
@@ -619,9 +628,9 @@ html body {
 	text-align: center;
 	position: relative;
 	top: -310px;
-}
+} */
 
-#overlay, #overlayContent, #categoryChoice {
+#overlay, #overlayContent {
     display: none;
 }
 
@@ -635,11 +644,21 @@ html body {
     width: 100%;
 }
 
+.categoryBtn {
+    background-color: rgb(87, 87, 87);
+    color: white;
+    margin-top: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 2rem;
+    width: 45%;
+}
 
-.overlayBtn:hover, .overlayBtn:focus {
+.overlayBtn:hover, .overlayBtn:focus, .categoryBtn:hover, .categoryBtn:focus {
     background-color: rgb(11, 188, 194);
     color: rgb(43, 1, 110);
 }
+
 
 .disabled {
     opacity: 25%;
@@ -650,10 +669,17 @@ html body {
     font-family: fantasy;
 }
 
-/* Cursor */
+/* Cursor Tracking */
 
 #cursorCanvas {
     background-color: black;
     margin: auto;
     width: 70%;
+    padding: 0;
+}
+
+#coords {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }

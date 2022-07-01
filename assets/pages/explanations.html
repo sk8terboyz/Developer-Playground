@@ -104,22 +104,38 @@
             <nav id="navbar-content" class="navbar bg-dark flex-column align-items-stretch p-4">
               <a class="navbar-brand text-light" href="#">Index</a>
               <nav class="nav nav-pills flex-column">
-                <a class="nav-link project-link" href="#home">Home</a>
-                <a class="nav-link project-link" href="#activeProjects">Active Projects</a>
-                <nav class="nav nav-pills flex-column">
-                  <a class="nav-link ms-3 my-1" href="#branches">Branches</a>
-                  <a class="nav-link ms-3 my-1" href="#bezierCurve">Bezier Curve</a>
-                </nav>
-                <a class="nav-link project-link" href="#developedProjects">Developed Projects</a>
-                <nav class="nav nav-pills flex-column">
-                  <a class="nav-link ms-3 my-1" href="#popcorn">Popcorn</a>
-                  <a class="nav-link ms-3 my-1" href="#diceExplanation">Dice</a>
-                </nav>
-                <a class="nav-link project-link" href="#projectIdeas">Project Ideas</a>
-                <nav class="nav nav-pills flex-column">
-                  <a class="nav-link ms-3 my-1" href="#hangman">Hangman</a>
-                  <a class="nav-link ms-3 my-1" href="#">TBD</a>
-                </nav>
+                <a class="nav-link project-link explanationLink" href="#home">Home</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link project-link dropdown-toggle explanationLink" href="#activeProjects" data-bs-toggle="dropdown" role="button" aria-expanded="false">Active Projects</a>
+                  <nav class="nav nav-pills flex-column">
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="nav-link ms-3 my-1 dropdown-item explanationLink subLink" href="#branches">Branches</a></li>
+                      <li><a class="nav-link ms-3 my-1 dropdown-item explanationLink subLink" href="#bezierCurve">Bezier Curve</a></li>
+                      <li><a class="nav-link ms-3 my-1 dropdown-item explanationLink subLink" href="#">Basics</a></li>
+                      <li><a class="nav-link ms-3 my-1 dropdown-item explanationLink subLink" href="#">Hangman</a></li>
+                    </ul>
+                  </nav>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link project-link dropdown-toggle explanationLink" href="#developedProjects" data-bs-toggle="dropdown" role="button" aria-expanded="false">Developed Projects</a>
+                  <nav class="nav nav-pills flex-column">
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="nav-link ms-3 my-1 dropdown-item explanationLink subLink" href="#popcorn">Popcorn</a></li>
+                      <li><a class="nav-link ms-3 my-1 dropdown-item explanationLink subLink" href="#diceExplanation">Dice</a></li>
+                      <li><a class="nav-link ms-3 my-1 dropdown-item explanationLink subLink" href="#">Animations</a></li>
+                      <li><a class="nav-link ms-3 my-1 dropdown-item explanationLink subLink" href="#">Cursor</a></li>
+                    </ul>
+                  </nav>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link project-link dropdown-toggle explanationLink" href="#projectIdeas" data-bs-toggle="dropdown" role="button" aria-expanded="false">Project Ideas</a>
+                  <nav class="nav nav-pills flex-column">
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="nav-link ms-3 my-1 dropdown-item explanationLink subLink" href="#">Bouncy Balls</a></li>
+                      <li><a class="nav-link ms-3 my-1 dropdown-item explanationLink subLink" href="#">TBD</a></li>
+                    </ul>
+                  </nav>
+                </li>
               </nav>
             </nav>
           </div>
