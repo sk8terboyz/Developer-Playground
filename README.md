@@ -2,6 +2,8 @@
 
 Author: Shane Kennedy
 
+Development on this project has been paused due to how it was created and the idea of changing to a React App instead for better security of files.
+
 ### The idea:
 This website is where I want to develop fun/random projects. It will be a fully functioning website, but I am going to try to stay away from server-based projects for awhile. Right now I want to work within the capabilities of HTML, CSS, and JavaScript. JQuery and Bootstrap are libraries I am fairly familiar with so I am using these to help, and I hope to use NodeJS later on.
     
